@@ -1,0 +1,24 @@
+// @import "../../styles/index.scss";
+@import "src/styles/index";
+
+body {
+  background-color: blue !important;
+}
+
+h2 {
+  margin-left: 5rem;
+  color: white;
+}
+
+.container {
+  @include center_div;
+  margin-top: 8rem;
+}
+
+// .container > div {
+//   width: 30%;
+// }
+
+.btn__top {
+  margin-top: 20px;
+}
