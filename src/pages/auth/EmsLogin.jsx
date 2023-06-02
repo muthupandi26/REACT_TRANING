@@ -78,7 +78,7 @@ function EmsLogin() {
         <InputFields
           type="text"
           name="user_id"
-          placeholder="User Id"
+          placeholder="USER ID"
           onChange={handleInputChange}
           value={loginInput.user_id}
           errorMessage={loginErrorMsg && loginErrorMsg.user_id}
@@ -86,16 +86,17 @@ function EmsLogin() {
         <InputFields
           type="password"
           name="password"
-          placeholder="Password"
+          placeholder="PASSWORD"
           onChange={handleInputChange}
           value={loginInput.password}
           errorMessage={loginErrorMsg && loginErrorMsg.password}
         />
 
         <ButtonField
+          divClassName={`btnContainer`}
           type="button"
-          buttonText="Login"
-          className="div__button"
+          buttonText="LOGIN"
+          className="loginBtn"
           onClick={handleSubmitBtn}
         />
       </div>

@@ -89,7 +89,7 @@ function ListEmployee() {
             aria-controls="menu-appbar"
             aria-haspopup="true"
             onClick={handleMenu}
-            color="white"
+            sx={{ color: "white" }}
           >
             <MenuIcon />
           </IconButton>
@@ -127,7 +127,8 @@ function ListEmployee() {
           <ButtonField
             type="button"
             buttonText="ADD"
-            addClassName="add__button"
+            divClassName="add__button"
+            className="addBtnText"
             onClick={addEmployee}
           />
         </div>
@@ -155,13 +156,13 @@ function ListEmployee() {
                     <td className={styles.action__button}>
                       <ButtonField
                         type="button"
-                        addClassName="edit__button"
+                        className="edit__button"
                         buttonText="Edit"
                         onClick={() => handleEditBtn(value)}
                       />
                       <ButtonField
                         type="button"
-                        addClassName="delete__button"
+                        className="delete__button"
                         buttonText="Delete"
                         onClick={() => handleDeleteBtn(value)}
                       />

@@ -32,7 +32,7 @@ function GitHomePage() {
         <h4>created at {userInfo.created_at} </h4>
         <p>updated at {userInfo.updated_at}</p>
         <ButtonField
-          addClassName="getRepoBtn"
+          divClassName={`getRepoBtn`}
           type="button"
           buttonText="Get All Repo Details!"
           onClick={getRepo}

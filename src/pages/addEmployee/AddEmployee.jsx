@@ -156,7 +156,7 @@ function AddEmployee() {
   return (
     <>
       <div>
-        <h2>Add Employee </h2>
+        <h2>ADD EMPLOYEE </h2>
 
         <div className={styles.container__box}>
           <InputFields
@@ -205,15 +205,17 @@ function AddEmployee() {
         </div>
         <div className={`${styles.container__box} ${styles.button}`}>
           <ButtonField
+            divClassName={`btnContainer`}
             type="button"
             buttonText="DISCARD"
-            className={`div__button discard__button `}
+            className={`discard__button`}
             onClick={handleDiscardBtn}
           />
           <ButtonField
+            divClassName={`btnContainer`}
             type="button"
             buttonText="SUBMIT"
-            className={`div__button submit__button`}
+            className={`submit__button`}
             onClick={handleSubmitBtn}
           />
         </div>

@@ -2,14 +2,14 @@ import React from "react";
 import styles from "./Button.module.scss";
 
 function ButtonField(props) {
-  const { buttonText, type, onClick, className, addClassName } = props;
+  const { buttonText, type, onClick, className, divClassName } = props;
 
   return (
-    <div className={` ${styles.div__button} ${addClassName} `}>
+    <div className={`${divClassName}`}>
       <button
         type={type}
         onClick={onClick}
-        className={`${styles.btn__style} ${className} `}
+        className={`${styles.btn__style} ${className}`}
       >
         {buttonText}
       </button>

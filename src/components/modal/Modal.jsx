@@ -16,13 +16,13 @@ function Modal(props) {
             <ButtonField
               className="modal__cancelBtn"
               type="button"
-              buttonText="Cancel"
+              buttonText="CANCEL"
               onClick={modalCancelBtn}
             />
             <ButtonField
               className="modal__confirmBtn"
               type="button"
-              buttonText="Confirm"
+              buttonText="CONFIRM"
               onClick={modalConfirmBtn}
             />
           </div>
