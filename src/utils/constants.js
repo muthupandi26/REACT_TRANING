@@ -4,6 +4,7 @@ const PAGE_ROUTES = {
   LISTEMPLOYEE: "/listEmployee",
   GITHOME: "/git",
   WEATHER: "/weather",
+  WEATHERNEW: "/weather_new",
 };
 
 const API_ROUTES = {

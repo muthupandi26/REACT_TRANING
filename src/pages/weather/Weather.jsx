@@ -15,7 +15,7 @@ function Weather() {
 
   const getWeatherData = () => {
     getWeatherApi
-      .getDefaultWeatherDetails({
+      .getWeatherDetails({
         q: search,
         appid: "f281c88825fc95be5f3fa2d092876bcc",
       })
@@ -36,7 +36,7 @@ function Weather() {
   useEffect(() => {
     if (fetch) {
       getWeatherApi
-        .getDefaultWeatherDetails({
+        .getWeatherDetails({
           lat: locationCoords.latitude,
           lon: locationCoords.longitude,
           appid: "f281c88825fc95be5f3fa2d092876bcc",

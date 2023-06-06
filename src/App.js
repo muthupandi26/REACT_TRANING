@@ -8,6 +8,8 @@ import GitHomePage from "./pages/githubData/GitHomePage";
 import { PAGE_ROUTES } from "./utils/constants";
 import Weather from "./pages/weather/Weather";
 
+import WeatherNew from "./pages/weatherNew/WeatherNew";
+
 function App() {
   return (
     <Routes>
@@ -17,6 +19,8 @@ function App() {
 
       <Route path={PAGE_ROUTES.GITHOME} element={<GitHomePage />} />
       <Route path={PAGE_ROUTES.WEATHER} element={<Weather />} />
+
+      <Route path={PAGE_ROUTES.WEATHERNEW} element={<WeatherNew />} />
     </Routes>
   );
 }
